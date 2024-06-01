@@ -1,6 +1,6 @@
 add_rules("mode.debug", "mode.release")
 
-add_requires("Catch 3.4.0")
+add_requires("catch2 3.4.0")
 
 target("cache_lite")
     set_kind("headeronly")
@@ -10,4 +10,4 @@ target("test")
   set_group("test")
   add_includedirs("src")
   add_files("test/*.cpp")
-  add_packages("Catch 3.4.0")
+  add_packages("catch2 3.4.0")

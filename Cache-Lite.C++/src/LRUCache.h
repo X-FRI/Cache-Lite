@@ -22,7 +22,7 @@ template <typename K, typename V> class LRUCache
     if (map.find(key) == map.end())
       {
         // If the key does not exist, throw an exception
-        throw std::exception("Can not find in cache!");
+        throw std::runtime_error("Can not find in cache!");
       }
     // Move visited nodes to the head of the linked list
     cache.splice(cache.begin(), cache, map[key]);
